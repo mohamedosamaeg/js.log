@@ -14,15 +14,53 @@
 </head>
 
 <body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WELCOME :) </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
        <header>
-       <h1> Registration  </h1>
+           <br>
+       <h1 class="raw"> Registration  </h1>
        </header>
         <br>
-        <form action="">
-        <h4>Profile Info</h4>
+        <form>
+        <h4 class="col">Profile Info</h4>
         <div>
-            <label>userName</label>
-            <input type="text" placeholder="ex:mohamed">
+            <label class="col">userName</label>
+            <input type="text" placeholder="ex:mohamed" class="col">
         </div>
         <div>
             <label>Password</label>
@@ -33,22 +71,22 @@
             <label>Email</label>
             <input type="email" placeholder="name@gmail.com">
         </div>
-        <div>
+        <div class="col">
             <label>Date</label>
-            <input type="date" placeholder="">
+            <input type="date" placeholder="datetime">
 
-        </div>
-        <div >
+        </div class="col">
+        <div class="col" >
             <label>Age</label>
             <input type="number" placeholder="your Age">
         </div>
         
-        <div >
+        <div class="col" >
             <label>Field</label><br>
             <input type="radio" name="field"><label>Programming</label> 
             <input type="radio" name="field"><label>Graphic</label>
         </div>
-        <div>
+        <div class="col">
             <label>Topics</label><br>
             <input type="checkbox"><label>C#</label>
             <input type="checkbox"><label></label>HTML</label>
@@ -58,7 +96,7 @@
         </div>
        
         <hr>
-        <div>
+        <div class="col">
         <label>Others</label><br>
         <textarea  placeholder="text...."> </textarea>
         </div>
