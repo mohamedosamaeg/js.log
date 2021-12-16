@@ -1,6 +1,9 @@
 function Login(){
-    var username=$("#userNameTXT").val();
+    var username=$("#UserTXT").val();
     var password=$("#passwordTXT").val();
+    var username=$("#MailTXT").val();
+    var password=$("#DateTXT").val();
+    var username=$("#AgeTXT").val();
     var formValidation = inputValidation();
     if (formValidation==true) {
         if (username=="mohamed" && password=="hoopoe2022") {
@@ -12,16 +15,24 @@ function Login(){
     }
 }
 function clearInputs(){
-    $("#userNameTXT").val("");
+    $("#UserTXT").val("");
     $("#passwordTXT").val("");
+    $("#MailTXT").val("");
+    $("#DateTXT").val("");
+    $("#AgeTXT").val("");
+   
+
 }
 
 function inputValidation(){
     var Valid;
-    var username=$("#userNameTXT").val();
+    var username=$("#UserTXT").val();
     var password=$("#passwordTXT").val();
+    var username=$("#MailTXT").val();
+    var password=$("#DateTXT").val();
+    var username=$("#AgeTXT").val();
 
-    //if input not null
+    
     if (username!=""&&password!="") {
         Valid=true;
     } else {
